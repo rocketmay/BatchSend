@@ -57,7 +57,7 @@ import fetch from 'node-fetch';
 
 		var count = batch.length;
 		var totalAmount = 0;
-		var approxFees = count * parseInt(transferUSDCost);
+		var approxFees = count * parseFloat(transferUSDCost);
 
 		for(var i = 0; i < batch.length; i++)
 		{

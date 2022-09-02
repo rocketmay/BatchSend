@@ -24,7 +24,7 @@ export async function sendTokens(batch, client, clientId, tokenid) {
         // the script sends out {bucketSize} transactions at once, then waits for all of them to resolve
         // it then waits {delay} milliseconds before sending out the next bucket.
         // this is mostly just to avoid sending thousands of transactions at a time.
-        await sendBucket(batch, client, clientId, tokenid, currentIndex, bucketSize);
+        await sendBucket(batch, client, clientId, tokenid, currentIndex, bucketSize, log);
         currentIndex = currentIndex + bucketSize;
 
     }
@@ -35,7 +35,7 @@ export async function sendTokens(batch, client, clientId, tokenid) {
 
 }
 
-async function sendBucket(batch, client, clientId, tokenid, currentIndex, bucketSize) {
+async function sendBucket(batch, client, clientId, tokenid, currentIndex, bucketSize,log) {
     return new Promise(resolve => {
         var endIndex = Math.min(currentIndex + bucketSize, batch.length);
 
