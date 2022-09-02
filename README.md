@@ -37,9 +37,11 @@ ______________________
 
 4. Save a CSV file with the name "batch.csv" in the base folder (replacing the one that comes with the repo). This is the list of account ID's and amount to send to each account.
 
-5. Run "node ./main.js". Carefully review the prompts. Answering yes to all the prompts will send off the transactions.
+5. Run "npm i" to install required node modules.
 
-6. When the script is complete, make sure to check the "log.csv" file for any transactions that failed.
+6. Run "node ./main.js". Carefully review the prompts. Answering yes to all the prompts will send off the transactions.
+
+7. When the script is complete, make sure to check the "log.csv" file for any transactions that failed.
 
 #### Future Improvements: ####
 
