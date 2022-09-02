@@ -1,0 +1,25 @@
+{
+  "name": "batchsend",
+  "version": "1.0.0",
+  "type":"module",
+  "description": "A script to send a token to multiple addresses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocketmay/BatchSend.git"
+  },
+  "author": "May Chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rocketmay/BatchSend/issues"
+  },
+  "homepage": "https://github.com/rocketmay/BatchSend#readme",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.18.1",
+    "dotenv": "^16.0.2",
+    "node-fetch": "^3.2.10"
+  }
+}
